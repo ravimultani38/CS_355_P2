@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f2eb;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #3c3024;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Ensures that the header is correctly positioned */
+  z-index: 1000;
+  /* Higher z-index to keep the header above other content */
+}
+
+.minimal-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background: #3b3024;
+  /* Dark burgundy, similar to red wine */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  /* Classic style for headings */
+}
+
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #3b3024;
+  /* Dark burgundy */
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Merriweather', serif;
+  /* Consistent font for navigation */
+}
+
+.navbar li a:hover {
+  background-color: #7d7164;
+  /* Slightly darker red for hover */
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  /* Increased margin to push down the title away from the navbar */
+}
+
+.container1 {
+  background-color: rgba(60, 48, 37, 0.9);
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  /* Added margin to separate it from header/title */
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 360px;
+}
+
+.form-control input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+  border-bottom-color: lightblue;
+}
+
+.form-control label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.form-control input:focus+label,
+.form-control input:valid+label {
+  transform: translateY(-20px);
+  font-size: 12px;
+  color: lightblue;
+}
+
+.btn {
+  background-color: lightblue;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.text a {
+  color: lightblue;
+}
